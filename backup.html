@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="learn.css">
+    <link rel="icon" type="image/x-icon" href="binary-code.png">
+</head>
+<body>
+    <main>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Play</a></li>
+                <li><a href="learn.html">Learn</a></li>
+                <li><a href="cheatsheet.html">Cheat Sheet</a></li>
+            </ul>
+        </nav>
+        <section>
+            <div>
+                <div class="par">
+                    <h1>Bits</h1>
+                    <p>A computer isn't smart. It can't speak english or think for itself. It's just a bunch of electricity that is either <b>on</b> or <b>off</b>.</p>
+                    <p> Imagine if you and a friend lived in houses across the street. Both of your rooms face eachother. You and your friend want a secret way to communicate with eachother. So you brainstorm and come up with a brilliant idea. You will communitate with your room lights.</p>
+                    <p>The problem is your light only has two states, <b>on</b> and <b>off</b>. You and your friend brainstorm some more and decide to make a secret code. When the light in , you write down "0". When the light is on, you write down "1".</p>
+                    <p>This is how computers "speak". In 1's and 0's. Each 1 or 0 is called a <b>bit</b>.</p>
+                </div>
+                <div class="par">
+                <h1>Nibbles</h1>
+                    <p>Ok, so you and your friend have a way to communicate. But just flipping the light on and off a bunch and writing down a bunch of 1's and 0's is hard to understand. You want to be able to read your friends messages more easily then "00101011100001010111".</p>
+                    <p>You decide to devide the 1's and 0's into sets of 4 digits for better readability.</p>
+                    <p>So "00101011100001010111" becomes "0010 1011 1000 0101 0111". Much better.</p>
+                    <p>Not long after that, as you sit on your couch being a potato, you are struck with an idea: what if each slot represented a bigger number and the 1's and 0's just told you whether that slot was active.</p>
+                    <p>After more brainstorming you decide on this:<br>0 | 0 | 0 | 0<br>8 | 4 | 2 | 1</p>
+                    <p>Now you can represent bigger numbers. Here are some expamples to really drive home the idea:<br>0001 -> 1<br>0010 -> 2<br>0101 -> 5<br>1001 -> 9<br>1000 -> 8</p>
+                    <p>You call these sets of 4 bits, <b>Nibbles</b>. Make sense?</p>
+                </div>
+                <div class="par">
+                    <h1>Hex</h1>
+                    <p>Now reading strings 1's and 0's is just not doable so you and your buddy come up with a system to make your nibbles better. Numbers 10-15 are replaced with letters A-F.</p>
+                    <p>Like this:<br>
+                        1010 -> 10 -> A<br>
+                        1011 -> 11 -> B<br>
+                        1100 -> 12 -> C<br>
+                        1101 -> 13 -> D<br>
+                        1110 -> 14 -> E<br>
+                        1111 -> 15 -> F<br>
+                    </p>
+                    <p>Behold, expamples:<br>
+                        1001 0100 1011 0011 -> 9 6 B 3<br>
+                        1111 0010 0001 0100 -> F 2 1 6<br>
+                        0001 0001 1011 0000 -> 1 1 B 0<br>
+                    </p>
+                    <p>So much more simpler to read.</p>
+                </div>
+                <div class="par">
+                    <h1>Bytes</h1>
+                    <p>Now this is where it gets a bit... more complicated.</p>
+                    <p>You don't wanna be stuck with just one nibble to express your self, right? So, you compine two nibbles to create a <b>byte</b>.</p>
+                    <p>A byte: 11111111 -> 255 -> FF</p>
+                    <p>The tricky thing here is understanding that two nibbles does not equal two 15's (which would make sense because the hex is FF). <br>It keeps going up exponentially:<br>128 | 64 | 32 | 16 | 8 | 4 | 2 | 1</p>
+                    <p>If you have multiple bytes this pattern continues.<br>Here is two bytes:<br>32,768 ∣ 16,384 ∣ 8,192 ∣ 4,096 ∣ 2,048 ∣ 1,024 ∣ 512 ∣ 256 ∣ 128 ∣ 64 ∣ 32 ∣ 16 ∣ 8 ∣ 4 ∣ 2 ∣ 1</p>
+
+                    <p>Here are some more explamples:<br>
+                        1 Byte | Binary: 10001001 -> Hex: 89 -> Number: 137<br><br>
+                        3 Bytes | Binary: 10000101 10100101 00101011 -> Hex: 87A94B -> Number: 8,932,147<br><br>
+                        4 Bytes | Binary: 10001111 01001101 11010101 01001001 -> Hex: 8F4D5A49 -> Number: 2,389,204,745
+                    </p>
+                </div>
+                <div class="par">
+                    <h1>The End</h1>
+                    <p>Well now that you've learned a bit about <b>binary</b> you should be able to go play the game and have no problem at all.</p>
+                    <p>Have fun and I hope you learned something. :)</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
