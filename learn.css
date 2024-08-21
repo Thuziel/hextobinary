@@ -1,0 +1,22 @@
+section {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+section div {
+    width: 40%;
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 3em;
+}
+p {
+    font-size: 1.5em;
+}
+
+.par {
+    width: 100%;
+    margin-bottom: 72px;
+}
